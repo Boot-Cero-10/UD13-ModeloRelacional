@@ -1,0 +1,10 @@
+Sucursal (N_Sucursal (pk int), ciudad, activo)
+
+Cliente (DNI (pk String), Nombre, Apellidos, Dirección, Cuidad)
+
+Cuenta (N_Cuenta (pk String), Saldo)
+
+Abrir (IdAbrir (Pk int), N_Sucursal(fk int), DNI(fk String), N_Cuenta(fk String))
+
+Transacción (N_Transaccion(pk int), Fecha, TipOperacion, Cantidad,
+N_Cuenta(fk String))
