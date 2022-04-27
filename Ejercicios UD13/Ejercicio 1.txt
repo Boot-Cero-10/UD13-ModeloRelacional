@@ -1,1 +1,0 @@
-Atleta (nDorsal (pk int), nombre, nDorsalRelevado (pk int))
