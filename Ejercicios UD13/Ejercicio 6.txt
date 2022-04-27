@@ -1,7 +1,7 @@
-Cliente (Cod_cliente(PK), Cod_pedido(Fk))
-
-Pedido (Cod_pedido(Pk), Fecha_pedido, Cod_producto(Fk))
+Proveedor (Cod_proveedor(Pk))
 
 Producto (Cod_producto(Pk), Cantidad, Cod_proveedor(Fk))
 
-Proveedor (Cod_proveedor(Pk))
+Pedido (Cod_pedido(Pk), Fecha_pedido, Cod_producto(Fk))
+
+Cliente (Cod_cliente(PK), Cod_pedido(Fk))
