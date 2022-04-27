@@ -1,6 +1,6 @@
-Sanción (Nº Días (Pk), NºSocio(Fk))
-
 Socios (Nº Socios (Pk), Nombre, Apellidos, Teléfono, Fecha_cad)
+
+Sanción (Nº Días (Pk), NºSocio(Fk))
 
 Préstamo (Nº Préstamos (Pk), Fecha_prest, Tipo, NºSocio(Fk))
 
