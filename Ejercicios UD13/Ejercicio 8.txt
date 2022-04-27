@@ -1,13 +1,19 @@
 Cargo (Código cargo nombre (Pk), funciones)
 
-Piso (Puerta (Pk)), DNI, nombre, apellidos, dirección, código postal, localidad, província,teléfono)
+Piso (Puerta (Pk), DNI, nombre, apellidos, dirección, código postal, localidad, província,teléfono)
 
 Ostenta (IdOstenta (Pk), puerta (Fk), codigoCargo, fecha posesión)
 
 Anotación (Código anotación (PK), fecha, importe)
 
-Gasto variable (GastoVariableID (Pk), Anotación (FK), fecha, factura, numero factura)
+Ingreso Recibo (Id Ingreso Recibo(pk), Piso(FK), Código anotación (FK) mes, pagado)
+
+Detalle Recibo (Numero Linea(PK), Id Ingreso Recibo(fk), concepto, importe)
+
+Gasto variable (GastoVariableID (Pk), Código anotación (FK), fecha, factura, numero factura)
 
 Tipo gasto fijo (Codigo TipoGastoID (Pk),nombre, descripción)
 
-Gasto fijo (GastoFijo(Pk),AnotaciónID (Fk),nombre, descripción)
+Gasto fijo (GastoFijo(Pk),Código anotación (Fk), nombre, descripción)
+
+Ingreso Extra (IngresoExtra(Pk),Código anotación (Fk), concepto)
