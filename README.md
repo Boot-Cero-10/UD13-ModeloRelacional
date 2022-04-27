@@ -1,7 +1,8 @@
 # UD13-ModeloRelacional!
 
 # Ejercicio 1
-[Captura de pantalla 2022-04-27 111450](https://user-images.githubusercontent.com/97692045/165485079-8656987a-7ba0-423f-b24a-a6b04273b528.jpg)
+![Captura de pantalla 2022-04-27 111450](https://user-images.githubusercontent.com/97692045/165486620-ad4c462c-ab33-4d1b-bee0-efd8eb4ec999.jpg)
+
 
 # Ejercicio 2
 
