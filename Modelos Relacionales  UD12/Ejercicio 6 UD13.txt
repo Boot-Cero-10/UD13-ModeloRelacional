@@ -6,8 +6,6 @@ Obra (IdObra (pk int), Deteriorado, Comentario, Nombre, Año, Resumen)
 
 Incluye (IdIncluye(pk int), IDPrestamo (fk int), IdObra(fk int))
 
-Autor ( IdAutor(pk int), IdLibro(fk int), IdPelícula(fk int), IdCd’s(fk int), Nombre, País)
-
 Crea (IdCrea (pk int), IdObra (fk int),IdAutor(fk int))
 
 Libros ( IdLibro(pk int), Autor, NúmerodePáginas)
@@ -15,6 +13,9 @@ Libros ( IdLibro(pk int), Autor, NúmerodePáginas)
 Películas ( IdPelícula(pk int), Autor, Duración)
 
 Cd’s ( IdCd’s(pk int), Autor, NúmerodeCanciones)
+
+Autor ( IdAutor(pk int), IdLibro(fk int), IdPelícula(fk int), IdCd’s(fk int), Nombre, País)
+
 
 
 
