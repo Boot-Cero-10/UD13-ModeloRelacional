@@ -1,0 +1,13 @@
+Cargo (Código cargo nombre (Pk), funciones)
+
+Piso (Puerta (Pk)), DNI, nombre, apellidos, dirección, código postal, localidad, província,teléfono)
+
+Ostenta (IdOstenta (Pk), puerta (Fk), codigoCargo, fecha posesión)
+
+Anotación (Código anotación (PK), fecha, importe)
+
+Gasto variable (GastoVariableID (Pk), Anotación (FK), fecha, factura, numero factura)
+
+Tipo gasto fijo (Codigo TipoGastoID (Pk),nombre, descripción)
+
+Gasto fijo (GastoFijo(Pk),AnotaciónID (Fk),nombre, descripción)

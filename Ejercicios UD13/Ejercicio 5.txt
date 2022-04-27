@@ -1,0 +1,13 @@
+Sanción (Nº Días (Pk), NºSocio(Fk))
+
+Socios (Nº Socios (Pk), Nombre, Apellidos, Teléfono, Fecha_cad)
+
+Préstamo (Nº Préstamos (Pk), Fecha_prest, Tipo, NºSocio(Fk))
+
+Préstamo_S (NºPréstamo (Pk))
+
+Préstamo_E (NºPréstamo (Pk), Fecha_Devol)
+
+Fondo (Título(Pk), Autor (Pk), Cantidad)
+
+Libro (Signatura (Pk), Disponible, NºPréstamo (Fk), Título (Fk), Autor (Fk))
