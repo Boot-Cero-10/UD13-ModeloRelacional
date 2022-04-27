@@ -1,27 +1,17 @@
-Socio (CodigoSocio (pk int),DNI, Nombre, Apellidos, Dirección, Teléfono)
+Socio ( CodigoSocio (pk int),DNI, Nombre, Apellidos, Dirección, Teléfono)
 
-Prestamo (IdPrestamo(pk int), CodigoSocio(fk int), FechaInicial, FechaDevolución, FechaMáxima)
+Prestamo ( IdPrestamo(pk int), CodigoSocio(fk int), FechaInicial, FechaDevolución, FechaMáxima)
 
-Obra (IdObra (pk int), Deteriorado, Comentario, Nombre, Año, Resumen)
+Obra ( IdObra (pk int), Deteriorado, Comentario, Nombre, Año, Resumen)
 
-Incluye (IdIncluye(pk int), IDPrestamo (fk int), IdObra(fk int))
+Incluye ( IdIncluye (pk int), IDPrestamo (fk int), IDObra (fk int))
 
-Crea (IdCrea (pk int), IdObra (fk int),IdAutor(fk int))
+Autor ( IdAutor(pk int), Nombre, País)
 
-Libros ( IdLibro(pk int), Autor, NúmerodePáginas)
+Crea ( IdCrea (pk int), IdAutor(fk int), IdObra (fk int))
 
-Películas ( IdPelícula(pk int), Autor, Duración)
+Libros ( IdLibro(pk int), IdObra(fk int), Autor, NúmerodePáginas)
 
-Cd’s ( IdCd’s(pk int), Autor, NúmerodeCanciones)
+Películas ( IdPelícula(pk int), IdObra(fk int), Autor, Duración)
 
-Autor ( IdAutor(pk int), IdLibro(fk int), IdPelícula(fk int), IdCd’s(fk int), Nombre, País)
-
-
-
-
-
-
-
-
-
-
+Cd’s ( IdCd’s(pk int), IdObra(fk int),  Autor, NúmerodeCanciones)
