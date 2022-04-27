@@ -1,17 +1,17 @@
-COCHE (Num_Coche(PK), Cod_Parque(Fk), Marcam Modelos, Num_Matricula, Fecha_Compra, Fecha_Ult_Rev)
-
-BOMBERO (Cod_Bom(Pk), Cod_Parque(Fk), Cod_Eq(Fk), Nombre, Apellidos, Fecha_Nac, DNI, Dirección, Teléfono)
-
 PERÍODO (Fecha Inicio (Pk), Fecha_Fin(Pk))
-
-TRABAJA_EN (Cod_Turno(Fk), Cod_Bomb(PK)(FK), Fecha_Inicio(Pk)(Fk), Fecha_Fin (Pk)(Fk))
 
 TURNO ( Cod_Turno (Pk), Descripción)
 
 PARQUE BOMBEROS (Cod_Parque (Pk), Nombre, Dirección, Teléfono, Categoría)
 
-RECIBE (CodParque(Pk)(Fk), CodPetServ(Pk)(Fk), Fecha, Hora)
+COCHE (Num_Coche(PK), Cod_Parque(Fk), Marcam Modelos, Num_Matricula, Fecha_Compra, Fecha_Ult_Rev)
+
+EQUIPO (Cod_Eq(Pk), Nombre)
+
+BOMBERO (Cod_Bom(Pk), Cod_Parque(Fk), Cod_Eq(Fk), Nombre, Apellidos, Fecha_Nac, DNI, Dirección, Teléfono)
+
+TRABAJA_EN (Cod_Turno(PK)(Fk), Cod_Bomb(PK)(FK), Fecha_Inicio(Pk)(Fk), Fecha_Fin (Pk)(Fk))
 
 PETICIÓN SERVICIO (CodPetServ (Pk), Cod_Eq(Fk), Tipo_Serv, GradoUrgencia)
 
-EQUIPO (Cod_Eq(Pk), Nombre)
+RECIBE (CodParque(Pk)(Fk), CodPetServ(Pk)(Fk), Fecha, Hora)
